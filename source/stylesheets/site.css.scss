@@ -3,11 +3,23 @@
 @import "animate";
 
 body {
-  background: image-url('bg.png') center center no-repeat fixed;
-  background-size: cover;
+  background-color: black;
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
+}
+
+#background {
+  background: image-url('bg.png') center center fixed no-repeat;
+  background-size: cover;
+  position: relative; 
+  overflow: hidden; 
+  width: 100%; 
+  height: 100vh; 
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
 }
 
 #canvas {
@@ -16,7 +28,13 @@ body {
   position: absolute;
 }
 
+#brand {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
+
 .logo img {
   margin-top: 20em;
   max-width: 80%;
+  z-index: 999;
 }
