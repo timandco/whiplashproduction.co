@@ -15,6 +15,9 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
+activate :relative_assets
+set :relative_links, true
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
